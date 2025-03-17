@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Page</title>
+  <!-- Quiz Page CSS -->
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <!-- A top section for quiz name and a back button -->
+    <div class="quiz-header d-flex align-items-center">
+      <button id="backBtn" class="btn btn-sm btn-light me-3">←</button>
+      <h4 id="quiz-title" class="mb-0">Loading...</h4>
+    </div>
+
+    <!-- Info row: question # and timer -->
+    <div class="quiz-info d-flex justify-content-between align-items-center mt-2">
+      <span id="question-count">Question 1 of 10</span>
+    </div>
+
+    <!-- Question + Options -->
+    <div class="question-area mt-4">
+      <h5 class="loading" id="question-text">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </h5>
+      <ul id="options-list" class="list-group mt-3">
+        <!-- Options go here -->
+      </ul> 
+      <button id="check-btn" class="btn btn-primary mt-3">Check</button>
+    </div>
+  </div>
+
+  <!-- Quiz JS -->
+  <script src="js/quiz.js"></script>
+</body>
+</html>

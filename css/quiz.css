@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3d4f3; 
+  }
+  
+.quiz-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #f8ebff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+  
+.quiz-header {
+    display: flex;
+    align-items: center;
+}
+  
+#backBtn {
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+#quiz-title {
+    font-weight: 600;
+}
+  
+.quiz-info {
+    font-size: 0.9rem;
+    color: #555;
+}
+  
+.question-area {
+    margin-top: 20px;
+}
+
+.loading {
+    --speed-of-animation: 0.9s;
+    --first-color: #f6bb02;
+    --second-color: #b3a2d6;
+    --third-color: #8ecae6;
+    --fourth-color: #f7d1e0;
+    --fifth-color: #39ff14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+   
+.loading span {
+    width: 4px;
+    height: 50px;
+    background: #f6bb02;
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+   
+.loading span:nth-child(2) {
+    background: #b3a2d6;
+    animation-delay: -0.8s;
+}
+   
+.loading span:nth-child(3) {
+    background: #8ecae6;
+    animation-delay: -0.7s;
+}
+   
+.loading span:nth-child(4) {
+    background: #f7d1e0;
+    animation-delay: -0.6s;
+}
+   
+.loading span:nth-child(5) {
+    background: #39ff14;
+    animation-delay: -0.5s;
+}
+   
+@keyframes scale {
+    0%, 40%, 100% {
+        transform: scaleY(0.05);
+    }
+   
+    20% {
+        transform: scaleY(1);
+    }
+}
+
+#question-text {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+  
+#options-list li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    list-style-type: none;
+    transition: background-color 0.3s ease;
+}
+  
+#options-list li:hover {
+    background-color: #ece4f6;
+}
+  
+#check-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: 1px solid darkgray;
+    padding: 0.5rem 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+  
